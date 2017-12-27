@@ -45,6 +45,10 @@ body {
       max-height: 80%;
       margin: auto;
     }
+
+    .gif-title {
+      font-size: 25px;
+    }
   }
 }
 
@@ -62,6 +66,13 @@ body {
       width: 100%;
       margin: 5px;
       cursor: pointer;
+
     }
+  }
+  img {
+    width: 100%;
+  }
+  .gif-title {
+    font-size: 16px;
   }
 }

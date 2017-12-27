@@ -5,11 +5,15 @@ class Gif extends Component {
     super(props);
   }
 
+  handleClick = () => {
+    this.props.changeSelectedGif({url: this.props.url, name: this.props.name});
+  }
+
   render() {
     return (
-      <div>
-        <img src="{this.props.url}" alt=""/>
-        <div>{this.props.name}</div>
+      <div className='gif'>
+        <img src={this.props.url} alt="" onClick={this.handleClick} />
+        <div className='gif-title'>{this.props.name}</div>
       </div>
     )
   }
